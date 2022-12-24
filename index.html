@@ -78,7 +78,7 @@ body {
 }
 
 .products {
-  font-size: 4em;
+  font-size: 3.5em;
 
   grid-area: content;
   display: flex;
@@ -97,7 +97,7 @@ body {
 h1,h2 { padding: 0; margin: 0 }
 
 .shadow {
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 6px 25px 0px rgb(0 0 0 / 62%);
 }
 
 .big-link {
@@ -112,9 +112,10 @@ h1,h2 { padding: 0; margin: 0 }
   color: var(--black);
   text-align: center;
   transition: 0.075s;
-  border-radius: 32px;
 
   filter: grayscale(10%);
+
+  border-radius: 32px;
 }
 
 .big-link:hover {
@@ -127,6 +128,14 @@ h1,h2 { padding: 0; margin: 0 }
   background: #181818bd;
   border-radius: 32px;
   padding: 32px 64px;
+}
+
+.product-card {
+  color: var(--white);
+  display: block;
+  background: #181818bd;
+  border-radius: 32px;
+  text-align: center;
 }
 
 @media (max-width: 450px) {
@@ -192,34 +201,22 @@ h1,h2 { padding: 0; margin: 0 }
 
 <div class="container" style='padding-bottom: 32px;'>
   <div class="products">
-    <a class='shadow big-link' href="/hypno.html" style='
-      background-image: url(/assets/hypno2.jpg);
-      background-size: 212%;
-      background-position: 50% 105%;
-    '>
-      <div style='
-        background: var(--white);
-        border-radius: 8px;
-        display: inline;
-        padding: 8px 10px;
-      '>
-        <b>Hypno</b> Shaders
-      </div>
+    <a class="shadow product-card" href="/hypno.html">
+      <div style="margin: 16px 0;"><b>Hypno</b> Shaders</div>
+      <span class='big-link' style='
+        background-image: url(/assets/hypno4.png);
+        background-position: 50% 50%;
+        background-size: cover;
+      '></span>
     </a>
 
-    <a class='shadow big-link' href="/goo.html" style='
-      background-image: url(/assets/goo2.png);
-      background-size: cover;
-      background-position: 50% 50%;
-    '>
-      <div style='
-        background: var(--white);
-        border-radius: 8px;
-        display: inline;
-        padding: 8px 16px;
-      '>
-        <b>Goo</b> Shader
-      </div>
+    <a class="shadow product-card" href="/goo.html">
+      <div style="margin: 16px 0;"><b>Goo</b> Shader</div>
+      <span class='big-link' style='
+        background-image: url(/assets/goo2.png);
+        background-size: cover;
+        background-position: 50% 50%;
+      '></span>
     </a>
   </div>
 </div>
