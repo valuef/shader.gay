@@ -1,0 +1,107 @@
+:root {
+  --black: #0f0f0f;
+  --white: #fafafa;
+}
+
+ul {
+ margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'dosis'
+}
+
+.emoji {
+  height: 1em;
+  padding: 0 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.border-white {
+  padding: 8px 16px;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  background: black;
+  color: var(--white);
+
+  text-decoration: none;
+}
+
+a.border-black {
+  padding: 8px 16px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  background: white;
+  color: var(--black);
+}
+
+.twitter-grid {
+  grid-area: tweets;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.making {
+  background: #cacde4;
+  background: linear-gradient(158deg, rgba(218,202,228,1) 0%, rgba(202,205,228,1) 100%); 
+
+  padding: 32px 0px;
+  font-size: 2em;
+
+  display: grid;
+  grid-template-areas:
+    ". title title ."
+    ". tweets tweets ."
+  ;
+  grid-template-columns: 1fr 600px 600px 1fr;
+}
+
+footer {
+  background: #1f1f1f;
+
+  padding: 24px 0px;
+
+  font-size: 1.5em;
+  color: var(--white);
+
+  display: grid;
+
+  grid-template-areas:
+    ". links social ."
+    ". copyright copyright ."
+  ;
+  grid-template-columns: 40% 10% 10% 40%;
+
+  justify-content: center;
+
+  text-weight: ligher;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    grid-template-areas:
+      "links social"
+      "copyright copyright"
+    ;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .twitter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .making {
+    grid-template-areas:
+      "title title"
+      "tweets tweets"
+    ;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

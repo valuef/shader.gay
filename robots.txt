@@ -1,0 +1,6 @@
+Host: shader.gay
+
+User-agent: *
+Allow: /
+
+Sitemap: https://shader.gay/sitemap.xml

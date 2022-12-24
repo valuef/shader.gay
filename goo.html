@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HS3JR6R7H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2HS3JR6R7H');
+  </script>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <title>Goo Shader for VRChat</title>
+
+  <meta property="description" content="A goo and slime shader for your VRChat avatar. It droops, deforms and reacts. Latex, slime and other presets available."/>
+
+  <meta property="og:title" content="Goo Shader for VRChat"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://shader.gay/goo.html"/>
+  <meta property="og:description" content="A goo and slime shader for your VRChat avatar. It droops, deforms and reacts. Latex, slime and other presets available."/>
+  <meta property="og:image" content="https://shader.gay/assets/goo2.png">
+  <meta property="og:image:alt" content="A collage of gooey VRChat dragon avatars."/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@Value_Factory"/>
+  <meta name="twitter:creator" content="@Value_Factory">
+  <meta name="twitter:title" content="Goo Shader for VRChat">
+  <meta name="twitter:description" content="A goo and slime shader for your VRChat avatar. It droops, deforms and reacts. Latex, slime and other presets available."/>
+  <meta name="twitter:image" content="https://shader.gay/assets/goo2.png">
+  <meta name="twitter:image:alt" content="A collage of gooey VRChat dragon avatars."/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+
+  <link href="/style.css" rel="stylesheet">
+
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+
+@media (max-width: 1200px) {
+  .title-logo {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <main id="goo-slime-shader" style='
+    background: #0f102a;
+    background: linear-gradient(204deg, rgba(41,4,61,1) 0%, rgba(15,16,42,1) 100%); 
+
+    padding: 32px 0;
+
+    font-size: 2em;
+    color: var(--white);
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+      ". title ."
+      ". content ."
+  '>
+    <div style='
+      grid-area: title;
+
+      padding-bottom: 32px;
+
+      display: grid;
+      justify-content: center;
+
+      grid-template-areas:
+        "left center ."
+      ;
+
+      grid-template-columns: 1fr auto 1fr
+    '>
+      <h1 style="
+        grid-area: center;
+        background: black;
+        width: fit-content;
+        padding: 4px 24px;
+        border-radius: 8px;
+        font-weight: normal;
+      ">
+        VRChat <b>Goo</b> Shader
+      </h1>
+
+      <div class='title-logo' style='
+        grid-area: left;
+        padding-left: 32px;
+        font-size: 1.5em;
+        align-self: center;
+      '>
+        <a href="/index.html" style='
+          color: var(--white); 
+          font-weight: bold
+        '>
+          ValueFactory
+        </a>
+      </div>
+    </div>
+
+    <!-- have some kind of gooey effect in the background to sell millions of copies and become rich
+         and buy elon musk. make the goo bleed with a gooey effect into the hypno shader section --!>
+    <div style='
+      grid-area: content;
+      display: grid;
+      justify-items: center;
+    '>
+      <div style='
+        display: grid;
+        margin: 32px;
+      '>
+        <img src="/assets/goo2.png" alt="Collage of gooey vrchat avatars" style='
+          max-width: 100%;
+          padding-bottom: 16px;
+        '></img>
+      </div>
+
+      <p style='
+        width: 800px;
+      '>
+        This goo shader will make your avatar feel <b>gooey, droopy and shiny</b> like no other shader.
+        It allows your avatar to <b>react and expand to touch</b>.
+        Choose from a number of <b>latex</b> presets, or build one to match your needs.
+      </p>
+
+      <p style='
+        width: 800px;
+      '>
+        It doubles as a <b>slime shader</b> too! Featuring various options for semi-transparency and intersection
+        effects. Choose from various styles of slime in the included presets, or make your own!
+      </p>
+
+
+      <div style='
+        display: grid;
+        justify-content: center;
+        margin: 32px;
+      '>
+        <img src="/assets/goo.png" alt="An avatar with black goo" style='
+          max-width: 100%;
+          width: 600px;
+          padding-bottom: 16px;
+        '></img>
+      </div>
+
+
+      <div style='
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #00000021;
+        padding: 16px;
+        border-radius: 8px;
+        font-size: .9em;
+        font-weight: lighter;
+      '>
+        <div>
+          <div style="padding-bottom: 8px; font-weight: normal;">Includes:</div>
+          <ul>
+            <li>Fluid-like Deformation</li>
+            <li>Droopy Goo</li>
+            <li>Touch Reactivity</li>
+            <li>Transformation Animations</li>
+            <li>Shiny Reflections</li>
+            <li>Detail Latex Folds</li>
+            <li>NSFW addon</li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="padding-bottom: 8px; font-weight: normal;">Presets:</div>
+          <ul>
+            <li>Black Latex Goo</li>
+            <li>White Latex Goo</li>
+            <li>Slime of various types</li>
+            <li>Honey Goo</li>
+            <li>Paint Goo</li>
+            <li>Mercury Goo</li>
+            <li>NSFW</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div style='
+        padding: 32px 0;
+      '>
+        <div style='
+          text-align: center;
+          padding-bottom: 4px;
+          font-weight: lighter;
+        '>Available for only 12€</div>
+
+        <div style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 16px;
+        ">
+          <a href="https://valuef.gumroad.com/l/goo" class="border-white" target="_blank">
+            <b style="display: flex; align-items: center;">
+              <img class="emoji" src="/assets/e_right.svg"></img>
+              Buy on Gumroad
+              <img class="emoji" src="/assets/e_left.svg"></img>
+            </b>
+          </a>
+        </div>
+
+        <div style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          font-weight: lighter;
+        ">
+          <a 
+            style="display: flex; align-items: center;" 
+            href="https://vrchat.com/home/world/wrld_3067e8fe-649e-43a6-b3d5-79d5db9cffb4" 
+            class="border-white" 
+            target="_blank"
+          >
+            <img class="emoji" src="/assets/e_world.svg"></img>
+            Avatar World
+          </a>
+          <a href="https://valuef.gumroad.com/l/goo-nsfw" class="border-white" target="_blank">
+            NSFW Addon
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div style="display: flex">
+    <img src="/assets/goo.png" alt="An avatar with black goo" style='
+      width: 100%;
+      max-height: 256px;
+      object-position: 50% 35%;
+      object-fit: cover;
+    '>
+    </img>
+  </div>
+
+  <div style='
+    background: #94d486;
+
+    padding: 32px 0px;
+    font-size: 2em;
+
+    display: grid;
+    grid-template-areas:
+      ". title ."
+      ". text ."
+      ". button ."
+    ;
+    grid-template-columns: 1fr auto 1fr;
+  '>
+    <div style="
+      grid-area: title;
+
+      padding-bottom: 32px;
+
+      font-size: 2em;
+      text-align: center;
+
+      display: flex;
+      justify-content : center;
+    ">
+      <div style="
+        background: white;
+        width: fit-content;
+        padding: 4px 24px;
+        border-radius: 8px;
+      ">
+        Transformation Included
+      </div>
+    </div>
+
+    <div style="
+      grid-area: text;
+      margin-bottom: 24px;
+      text-align: center;
+      max-width: 800px;
+    ">
+      The goo shader gives you the ability to make transformation sequences and animations. Choose
+      from a smooth transformation animation across your whole mesh, a point-light option that lets
+      others make you transform with proximity, or mix both at the same time!
+    </div>
+
+    <div style='
+      grid-area: button;
+      margin: auto;
+    '>
+      <a 
+        style="display: flex; align-items: center;" 
+        href="https://www.youtube.com/watch?v=2HZuGPBjDkw"
+        class="border-white" 
+        target="_blank"
+      >
+        <img class="emoji" src="/assets/e_gear.svg"></img>
+        View TF Setup Tutorial
+      </a>
+    </div>
+  </div>
+
+
+  <div style='
+    object-fit: fill;
+    display: flex;
+  '>
+    <video style='
+      width: 100%;
+    ' controls autoplay loop src="/assets/tf.mov">
+    </video>
+  </div>
+
+
+  <div class='making'>
+    <div style="
+      grid-area: title;
+
+      padding-bottom: 32px;
+
+      font-size: 2em;
+      text-align: center;
+
+      display: flex;
+      justify-content : center;
+    ">
+      <div style="
+        background: white;
+        width: fit-content;
+        padding: 4px 24px;
+        border-radius: 8px;
+      ">
+        What people are <b>making</b>
+      </div>
+    </div>
+
+    <div class="twitter-grid">
+
+      <blockquote style='grid-area: tweet' class="twitter-tweet"><p lang="en" dir="ltr">CW: // Hypno, Goo<br><br>Undried paint probably isn&#39;t very safe, and it&#39;s certainly a bit messy.<br><br>-<br>Both Goo and Eye shaders made by <a rel="nofollow" href="https://twitter.com/Value_Factory?ref_src=twsrc%5Etfw">@Value_Factory</a> go buy em <a rel="nofollow" href="https://t.co/g3Hkga1Izu">pic.twitter.com/g3Hkga1Izu</a></p>&mdash; CanvasVR 🏳️‍⚧️ (@WelshAnomaly) <a rel="nofollow" href="https://twitter.com/WelshAnomaly/status/1583763249287245824?ref_src=twsrc%5Etfw">October 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+      <blockquote style='grid-area: tweet' class="twitter-tweet"><p lang="ja" dir="ltr">同族化シチュを量産できるのでgooｼｪｰﾀﾞｰは神です <a rel="nofollow" href="https://t.co/mJWxmDiTko">pic.twitter.com/mJWxmDiTko</a></p>&mdash; ジウベ：VRC:Ziube (@Ziuriachan) <a rel="nofollow" href="https://twitter.com/Ziuriachan/status/1576157606946648066?ref_src=twsrc%5Etfw">October 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dont be Shy Cutie~<br><br>Take my paw and embrace the Goop~<br>You will love your new self~ &gt;;3<br><br>Amazing Shader by <a rel="nofollow" href="https://twitter.com/Value_Factory?ref_src=twsrc%5Etfw">@Value_Factory</a> 💦<br>Amazing Texture by <a rel="nofollow" href="https://twitter.com/ArcadiusLewd?ref_src=twsrc%5Etfw">@ArcadiusLewd</a> 🦊 <a rel="nofollow" href="https://t.co/VabLhiL6jw">pic.twitter.com/VabLhiL6jw</a></p>&mdash; 🔞PasciFolf🔞 (@RascoFox) <a rel="nofollow" href="https://twitter.com/RascoFox/status/1577014764785762304?ref_src=twsrc%5Etfw">October 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">More fun with <a rel="nofollow" href="https://twitter.com/Value_Factory?ref_src=twsrc%5Etfw">@Value_Factory</a> new shader. <a rel="nofollow" href="https://t.co/XfamX6qtOY">pic.twitter.com/XfamX6qtOY</a></p>&mdash; Rhynn 🏳️‍🌈 (@RhynnDerg) <a rel="nofollow" href="https://twitter.com/RhynnDerg/status/1584334326078279680?ref_src=twsrc%5Etfw">October 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div>
+  </div>
+
+  <div style='
+    object-fit: fill;
+    display: flex;
+  '>
+    <iframe style='
+      width: 100%;
+      height: 800px;
+    '
+      src="https://www.youtube.com/embed/x0pCNIzHUCI" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+
+
+
+  <div style='
+    background: #f4f4f4;
+
+    padding: 32px 0px;
+    font-size: 2em;
+
+    display: grid;
+    grid-template-areas:
+      ". title ."
+      ". text ."
+      ". button ."
+    ;
+    grid-template-columns: 1fr auto 1fr;
+  '>
+    <div style="
+      grid-area: title;
+
+      padding-bottom: 32px;
+
+      font-size: 2em;
+      text-align: center;
+
+      display: flex;
+      justify-content : center;
+    ">
+      <div style="
+        background: white;
+        width: fit-content;
+        padding: 4px 24px;
+        border-radius: 8px;
+      ">
+        Available on Gumroad
+      </div>
+    </div>
+
+    <div style="
+      grid-area: text;
+      margin-bottom: 24px;
+      text-align: center;
+    ">
+      Rated 5 stars, for only 12€
+    </div>
+
+    <div style='
+      grid-area: button;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    '>
+      <a href="https://valuef.gumroad.com/l/goo" class="border-white" target="_blank">
+        <b style="display: flex; align-items: center;">
+          Buy
+        </b>
+      </a>
+    </div>
+  </div>
+
+
+  <div style='
+    background: #cacde4;
+    background: linear-gradient(158deg, rgba(218,202,228,1) 0%, rgba(202,205,228,1) 100%); 
+
+    padding: 32px 0px;
+    font-size: 2em;
+
+    display: grid;
+    grid-template-areas:
+      ". title title ."
+      ". text text ."
+      ". button button ."
+    ;
+    grid-template-columns: 25% 25% 25% 25%;
+  '>
+    <div style="
+      grid-area: title;
+
+      padding-bottom: 32px;
+
+      font-size: 2em;
+      text-align: center;
+
+      display: flex;
+      justify-content : center;
+    ">
+      <div style="
+        background: white;
+        width: fit-content;
+        padding: 4px 24px;
+        border-radius: 8px;
+      ">
+        Got a question?
+      </div>
+    </div>
+
+    <div style="
+      grid-area: text;
+      margin-bottom: 24px;
+      text-align: center;
+    ">
+      Join our Discord server and ask it in our questions channel!
+    </div>
+
+    <div style='
+      grid-area: button;
+      margin: auto;
+    '>
+      <a href="http://discord.shader.gay" target="_blank" class="border-white">Discord Invite</a>
+    </div>
+  </div>
+
+  <footer>
+    <div style="
+      grid-area: links;
+      display: grid;
+      border-right: 1px solid #5a5a5a;
+      text-align: right;
+      padding-right: 16px;
+      align-content: baseline;
+    ">
+      <div style='padding-bottom: 8px;'><b>Products</b></div>
+      <a href="/index.html" style="color: var(--white);">Landing</a>
+      <a href="/hypno.html" style="color: var(--white);">Hypno Shaders</a>
+      <a href="/goo.html" style="color: var(--white);">Goo Shader</a>
+    </div>
+
+    <div style="
+      grid-area: social;
+      display: grid;
+      padding-left: 16px;
+      align-content: baseline;
+    ">
+      <div style='padding-bottom: 8px;'><b>Links</b></div>
+      <a href="http://twitter.shader.gay" target="_blank" style="color: var(--white);">Twitter</a>
+      <a href="http://discord.shader.gay" target="_blank" style="color: var(--white);">Discord</a>
+      <a href="http://gumroad.shader.gay" target="_blank" style="color: var(--white);">Gumroad</a>
+    </div>
+
+    <div style="
+      padding-top: 16px;
+      grid-area: copyright;
+      text-align: center;
+      color: #5a5a5a;
+    ">
+      (c) 2022 ValueFactory
+    </div>
+  </footer>
+
+
+</body>
+</html>
