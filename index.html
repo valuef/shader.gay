@@ -87,13 +87,6 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1200px) {
-  .products {
-    flex-direction: column;
-  }
-}
-
-
 h1,h2 { padding: 0; margin: 0 }
 
 .shadow {
@@ -138,23 +131,58 @@ h1,h2 { padding: 0; margin: 0 }
   text-align: center;
 }
 
-@media (max-width: 450px) {
+.hypno {
+  display: flex;
+  flex-direction: row;
+}
+
+.hypno-link {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.hypno-dlc-link {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+@media (max-width: 600px) {
   .big-link {
     width: 260px;
     height: 260px;
+
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
   }
 
   .top-card {
     padding: 32px 16px;
+    flex-direction: column;
   }
 
   .products {
     font-size: 2.5em;
   }
-
 }
 
+@media (max-width: 1300px) {
+  .products {
+    flex-direction: column;
+  }
+  .hypno {
+    flex-direction: column;
+  }
 
+  .hypno-link {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+
+  .hypno-dlc-link {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+}
 
   </style>
 </head>
@@ -163,12 +191,16 @@ h1,h2 { padding: 0; margin: 0 }
   padding-top: 32px;
   padding-bottom: 32px;
 '>
-  <div class="shadow top-card">
+  <div class="shadow top-card" style='
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  '>
     <div style='
+      gap: 8px;
       text-align: center;
       align-items: center;
       display: flex;
-      flex-direction: column;
     '>
       <img style='
         border-radius: 64px;
@@ -176,8 +208,12 @@ h1,h2 { padding: 0; margin: 0 }
         height: 128px;
         display: block;
       'src="/pfp.png"></img>
-      <div style='font-weight: bold; font-size: 2.5em; padding-bottom: 8px' >ValueFactory</div>
-      <h1 style='font-weight: normal; font-size: 2em;'>I make VRChat Shaders!</h1>
+      <div style='
+        text-align: left;
+      '>
+        <div style='font-weight: bold; font-size: 2em;' >ValueFactory</div>
+        <h1 style='font-weight: normal; font-size: 1.5em;' >VRChat Shaders</h1>
+      </div>
     </div>
 
     <div style='
@@ -200,14 +236,38 @@ h1,h2 { padding: 0; margin: 0 }
 
 <div class="container" style='padding-bottom: 32px;'>
   <div class="products">
-    <a class="shadow product-card" href="https://hypno.shader.gay">
-      <div style="margin: 16px 0;"><b>Hypno</b> Shaders</div>
-      <span class='big-link' style='
-        background-image: url(/assets/hypno4.png);
-        background-position: 50% 50%;
-        background-size: cover;
-      '></span>
-    </a>
+    <div class="shadow product-card hypno">
+      <a href="https://hypno.shader.gay">
+        <div style="color: var(--white); text-decoration: none; margin: 16px 0;"><b>Hypno</b> Shaders</div>
+        <span class='big-link hypno-link' style='
+          background-image: url(/assets/hypno4.png);
+          background-position: 50% 50%;
+          background-size: cover;
+        '></span>
+      </a>
+
+      <div>
+        <a style="margin-bottom: 16px" class="shadow product-card" href="https://screenspace.shader.gay">
+          <div style="padding: 16px 0;"><b>Screenspace</b> DLC</div>
+          <span class='big-link hypno-dlc-link' style='
+            height: 132px;
+            background-image: url(/assets/screenspace.png);
+            background-size: cover;
+            background-position: 50% 50%;
+          '></span>
+        </a>
+        <a class="shadow product-card" href="https://focus.shader.gay">
+          <div style="padding: 16px 0;"><b>Focus</b> DLC</div>
+          <span class='big-link hypno-dlc-link' style='
+            height: 132px;
+            background-image: url(/assets/focus.png);
+            background-size: cover;
+            background-position: 50% 50%;
+
+          '></span>
+        </a>
+      </div>
+    </div>
 
     <a class="shadow product-card" href="https://goo.shader.gay">
       <div style="margin: 16px 0;"><b>Goo</b> Shader</div>
