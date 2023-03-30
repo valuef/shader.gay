@@ -260,7 +260,7 @@ h1,h2 { padding: 0; margin: 0 }
           <div style="padding: 16px 0;"><b>Focus</b> DLC</div>
           <span class='big-link hypno-dlc-link' style='
             height: 132px;
-            background-image: url(/assets/focus2.png);
+            background-image: url(/assets/focus.png);
             background-size: cover;
             background-position: 50% 50%;
 
