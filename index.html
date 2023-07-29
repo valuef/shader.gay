@@ -134,9 +134,12 @@ h1,h2 { padding: 0; margin: 0 }
 .product-card {
   color: var(--white);
   display: block;
-  background: #181818bd;
   border-radius: 32px;
   text-align: center;
+}
+
+.product-card-bg {
+  background: #181818bd;
 }
 
 .hypno {
@@ -156,7 +159,7 @@ h1,h2 { padding: 0; margin: 0 }
 
 @media (max-width: 600px) {
   .big-link {
-    width: 260px;
+    width: 260px
     height: 260px;
 
     border-top-right-radius: unset;
@@ -249,13 +252,16 @@ h1,h2 { padding: 0; margin: 0 }
 
       <a class="link-icon" style='background-image: url("/icons/vrchat.png"); background-size: 60%; background-repeat: no-repeat;' href="https://vrchat.com/home/group/grp_7cdb0b6f-2696-4631-b2f9-6228d6068760"></a>
       <a rel="me" class="link-icon" style='background-image: url("/icons/mastodon.png"); background-size: 85%;' href="https://meow.social/@value"></a>
+
+      <a href="https://www.youtube.com/channel/UC0Y92OLGl1LMZJxSZy5Wwag" class="link-icon"style='background-image: url("/icons/youtube.png"); '></a>
+
     </div>
   </div>
 </div>
 
 <div class="container" style='padding-bottom: 32px;'>
   <div class="products">
-    <div class="shadow product-card hypno">
+    <div class="shadow product-card product-card-bg hypno" style='border: 2px solid rgb(255 188 0)'>
       <a href="https://hypno.shader.gay">
         <div style="color: var(--white); text-decoration: none; margin: 16px 0;"><b>Hypno</b> Shaders</div>
         <span class='big-link hypno-link' style='
@@ -266,7 +272,7 @@ h1,h2 { padding: 0; margin: 0 }
       </a>
 
       <div>
-        <a style="margin-bottom: 16px" class="shadow product-card" href="https://screenspace.shader.gay">
+        <a style="margin-bottom: 16px;" class="product-card" href="https://screenspace.shader.gay">
           <div style="padding: 16px 0;"><b>Screenspace</b> DLC</div>
           <span class='big-link hypno-dlc-link' style='
             height: 132px;
@@ -275,7 +281,7 @@ h1,h2 { padding: 0; margin: 0 }
             background-position: 50% 50%;
           '></span>
         </a>
-        <a class="shadow product-card" href="https://focus.shader.gay">
+        <a class="product-card" href="https://focus.shader.gay">
           <div style="padding: 16px 0;"><b>Focus</b> DLC</div>
           <span class='big-link hypno-dlc-link' style='
             height: 132px;
@@ -288,7 +294,7 @@ h1,h2 { padding: 0; margin: 0 }
       </div>
     </div>
 
-    <a class="shadow product-card" href="https://boop.shader.gay">
+    <a class="shadow product-card product-card-bg" href="https://boop.shader.gay" style='border: 2px solid rgb(255, 188,0);'>
       <div style="margin: 16px 0;"><b>Boop</b> Counter</div>
       <span class='big-link' style='
         background-image: url(/assets/boop.png);
@@ -298,7 +304,7 @@ h1,h2 { padding: 0; margin: 0 }
     </a>
 
 
-    <a class="shadow product-card" href="https://goo.shader.gay">
+    <a class="shadow product-card product-card-bg" href="https://goo.shader.gay" style='border: 2px solid rgb(255, 188,0);'>
       <div style="margin: 16px 0;"><b>Goo</b> Shader</div>
       <span class='big-link' style='
         background-image: url(/assets/goo2.png);
