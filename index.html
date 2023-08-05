@@ -57,8 +57,8 @@ body {
   font-family: 'dosis';
   color: white;
   background-image: url("/bg.png");
-  background-size: cover;
-  background-position: 50% 0%;
+  background-size: 200%;
+  background-position: 50% 50%;
 
   display: grid;
   height: 100vh;
@@ -83,13 +83,13 @@ body {
 }
 
 .products {
-  font-size: 3.5em;
+  font-size: 3em;
 
   grid-area: content;
   display: flex;
   gap: 32px;
   flex-direction: row;
-  align-items: center;
+  align-items: center
 }
 
 h1,h2 { padding: 0; margin: 0 }
@@ -99,8 +99,8 @@ h1,h2 { padding: 0; margin: 0 }
 }
 
 .big-link {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 
   display: flex;
   padding: 8px;
@@ -259,8 +259,15 @@ h1,h2 { padding: 0; margin: 0 }
   </div>
 </div>
 
-<div class="container" style='padding-bottom: 32px;'>
-  <div class="products">
+<div class="container" 
+  style='
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  '>
+
+  <div class="products" style='padding-bottom: 32px;'>
     <div class="shadow product-card product-card-bg hypno" style='border: 2px solid rgb(255 188 0)'>
       <a href="https://hypno.shader.gay">
         <div style="color: var(--white); text-decoration: none; margin: 16px 0;"><b>Hypno</b> Shaders</div>
@@ -275,7 +282,7 @@ h1,h2 { padding: 0; margin: 0 }
         <a style="margin-bottom: 16px;" class="product-card" href="https://screenspace.shader.gay">
           <div style="padding: 16px 0;"><b>Screenspace</b> DLC</div>
           <span class='big-link hypno-dlc-link' style='
-            height: 132px;
+            height: 114px;
             background-image: url(/assets/screenspace.png);
             background-size: cover;
             background-position: 50% 50%;
@@ -284,7 +291,7 @@ h1,h2 { padding: 0; margin: 0 }
         <a class="product-card" href="https://focus.shader.gay">
           <div style="padding: 16px 0;"><b>Focus</b> DLC</div>
           <span class='big-link hypno-dlc-link' style='
-            height: 132px;
+            height: 114px;
             background-image: url(/assets/focus2.png);
             background-size: cover;
             background-position: 50% 50%;
@@ -294,6 +301,16 @@ h1,h2 { padding: 0; margin: 0 }
       </div>
     </div>
 
+    <a class="shadow product-card product-card-bg" href="https://goo.shader.gay" style='border: 2px solid rgb(255, 188,0);'>
+      <div style="margin: 16px 0;"><b>Goo</b> Shader</div>
+      <span class='big-link' style='
+        background-image: url(/assets/goo2.png);
+        background-size: cover;
+        background-position: 50% 50%;
+      '></span>
+    </a>
+  </div>
+  <div class="products">
     <a class="shadow product-card product-card-bg" href="https://boop.shader.gay" style='border: 2px solid rgb(255, 188,0);'>
       <div style="margin: 16px 0;"><b>Boop</b> Counter</div>
       <span class='big-link' style='
@@ -303,15 +320,15 @@ h1,h2 { padding: 0; margin: 0 }
       '></span>
     </a>
 
-
-    <a class="shadow product-card product-card-bg" href="https://goo.shader.gay" style='border: 2px solid rgb(255, 188,0);'>
-      <div style="margin: 16px 0;"><b>Goo</b> Shader</div>
+    <a class="shadow product-card product-card-bg" href="https://teeth.shader.gay" style='border: 2px solid rgb(255, 188,0);'>
+      <div style="font-size: .9em; margin: 16px 0;">Nardo <b>Canine Teeth</b></div>
       <span class='big-link' style='
-        background-image: url(/assets/goo2.png);
+        background-image: url(/assets/nardo-canine-teeth.png);
         background-size: cover;
         background-position: 50% 50%;
       '></span>
     </a>
+
 
   </div>
 </div>
